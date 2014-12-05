@@ -1,0 +1,7 @@
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб4\DAA.TP.lab5\DAA.TP.lab5\bin\Debug\DAA.TP.lab5.exe.config
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\bin\Debug\DAA.TP.lab5.exe.config
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\bin\Debug\DAA.TP.lab5.exe
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\bin\Debug\DAA.TP.lab5.pdb
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\obj\Debug\DAA.TP.lab5.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\obj\Debug\DAA.TP.lab5.exe
+C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\DAA.TP.lab5\DAA.TP.lab5\obj\Debug\DAA.TP.lab5.pdb
