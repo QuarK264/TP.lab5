@@ -14,13 +14,15 @@
             uint counter = 0;
             StreamWriter OutputText = new StreamWriter(File.Create(@"C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\Result.txt"));
             foreach (string line in ListWithoutCommas)
-            {                
-                counter = (uint) Regex.Matches(line, pattern).Count;
+            {
+                counter = (uint)Regex.Matches(line, pattern).Count;
                 OutputText.WriteLine("{0} {1}", line, counter);
-                
+
                 counter = 0;
             }
             OutputText.Close();
+            Console.WriteLine("Программа подсчитывает количество слов в предложениях без запятых и выводит результат работы в файл.");
+            Console.WriteLine(@"Результат работы программы вы можете найти в папке C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5");
         }
 
         static void Main()
