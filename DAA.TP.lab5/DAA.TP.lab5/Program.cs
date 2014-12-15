@@ -15,11 +15,12 @@
             StreamWriter OutputText = new StreamWriter(File.Create(@"C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\Result.txt"));
             foreach (string line in ListWithoutCommas)
             {                
-                counter += (uint) Regex.Matches(line, pattern).Count;
+                counter = (uint) Regex.Matches(line, pattern).Count;
                 OutputText.WriteLine("{0} {1}", line, counter);
-                OutputText.WriteLine(counter);
+                
                 counter = 0;
             }
+            OutputText.Close();
         }
 
         static void Main()
