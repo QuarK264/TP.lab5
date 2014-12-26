@@ -18,13 +18,12 @@
             string line;
             string pattern = @".+?[.!?]";
             ListText = new List<string>();
-            while ((line = IncomingFile.ReadLine()) != null)
+            line = IncomingFile.ReadToEnd();
+            foreach (Match sentence in Regex.Matches(line, pattern, RegexOptions.IgnoreCase))
             {
-                foreach (Match sentence in Regex.Matches(line, pattern, RegexOptions.IgnoreCase))
-                {
-                    ListText.Add(sentence.Value.Trim());
-                }
+                ListText.Add(sentence.Value.Trim());
             }
+
             return ListText;
         }
 
