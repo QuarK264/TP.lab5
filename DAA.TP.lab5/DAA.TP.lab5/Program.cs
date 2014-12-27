@@ -8,22 +8,18 @@
 
     class Program
     {
-        private static List<string> WordCount(List<string> ListWithoutCommas)
+        private static int WordCount(string sentence)
         {
             string pattern = @"\w+(?>[\s\.])";
-            for (int i = 0; i < ListWithoutCommas.Count; i++)
-            {
-                ListWithoutCommas[i] += string.Format(" {0}", Regex.Matches(ListWithoutCommas[i], pattern).Count.ToString());
-            }
-            return ListWithoutCommas;            
+            return Regex.Matches(sentence, pattern).Count;
         }
 
         private static void OutputResult(List<string> ListWithoutCommas)
         {
             StreamWriter OutputText = new StreamWriter(File.Create(@"C:\Users\1\Documents\2 курс 3 семестр - Технология программирования\Лаб5\Result.txt"));
-            foreach (string line in ListWithoutCommas)
+            foreach (string sentence in ListWithoutCommas)
             {
-                OutputText.WriteLine(line);
+                OutputText.WriteLine(WordCount(sentence));
             }
             OutputText.Close();
             Console.WriteLine("Программа подсчитывает количество слов в предложениях без запятых и выводит результат работы в файл.");
@@ -46,7 +42,6 @@
             Text.CommasExclusion();
             try
             {
-                Text.ListWithoutCommas = WordCount(Text.ListWithoutCommas);
                 OutputResult(Text.ListWithoutCommas);
             }
             catch (OverflowException e)
